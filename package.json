@@ -1,0 +1,16 @@
+{
+  "name": "api-bot-incwheel",
+  "version": "1.0.0",
+  "description": "bot api incwheel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Danil Fevralsky",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.1.2",
+    "vk-io": "^4.7.0"
+  }
+}
