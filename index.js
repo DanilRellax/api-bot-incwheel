@@ -1,6 +1,6 @@
 const axios = require('axios'); // Модуль для запросов к серверу.
 const { VK } = require('vk-io'); // Модуль для работы бота.
-const payment = require('./payment/payment.json');
+const payment = require('./payment/payment.json'); // JSON - файл, с последними пополнениями.
 
 // Подключение к API серверу
 let userId = 0
