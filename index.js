@@ -13,7 +13,7 @@ const bot = new VK({ token: group_token });
 
 // Проверка баланса любого человека (по умолчанию стоит ваш id).
 async function get_balance(id) {
-    let { data } = await axios.post('http://dan-app.space:3000/api/get_balance', {
+    let { data } = await axios.post('http://inc-coin.space/api/get_balance', {
         user_id: id
     });
     return data.response.balance;
@@ -21,7 +21,7 @@ async function get_balance(id) {
 
 // Вывод коинов.
 async function send_coin() {
-    let { data } = await axios.post('http://dan-app.space:3000/api/send_coins', {
+    let { data } = await axios.post('http://inc-coin.space/api/send_coins', {
         sender_id: userId,
         key: userKey,
         amount: 100,
@@ -48,7 +48,7 @@ bot.updates.on('message', async(context) => {
 });
 
 setInterval(async() => {
-    let { data } = await axios.post('http://dan-app.space:3000/api/payments', {
+    let { data } = await axios.post('http://inc-coin.space/api/payments', {
         user_id: userId,
         key: userKey
     });
